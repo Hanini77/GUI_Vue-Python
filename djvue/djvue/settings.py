@@ -56,7 +56,7 @@ ROOT_URLCONF = 'djvue.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [s.path.join(BASE_DIR, 'templates/')], # Establecemos el directorio de las plantillas
+        'DIRS': [os.path.join(BASE_DIR, 'templates/')], # Establecemos el directorio de las plantillas
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
