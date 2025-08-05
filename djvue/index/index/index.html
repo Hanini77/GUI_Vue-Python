@@ -1,3 +1,4 @@
+{% load render_bundle from webpack_loader %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,5 +8,11 @@
 </head>
 <body>
     <h1 style="text-align: center;">Base de datos</h1>
+    {% render_bundle 'main' %}
+
+    <div id="app" style="text-align: center;">
+        [[ msg ]]
+        <hello-django/>
+    </div>
 </body>
 </html>
