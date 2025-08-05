@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webpack_loader',
+
+    'index.apps.IndexConfig',  # Aplicación para la página de inicio
 ]
 
 MIDDLEWARE = [
